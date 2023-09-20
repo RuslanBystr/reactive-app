@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import axios from "axios";  
 
 const Time = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
@@ -17,12 +16,18 @@ const Time = () => {
     const hours = currentTime.getHours();
     const minutes = currentTime.getMinutes();
     const seconds = currentTime.getSeconds();
+    const day = currentTime.getDate();
+    const month = currentTime.getMonth();
+    const year = currentTime.getFullYear();
   
     return (
       <div>
         <h1>Now time:</h1>
-        <p>
+        <p> 
           {hours}:{minutes < 10 ? '0' : ''}{minutes}:{seconds < 10 ? '0' : ''}{seconds}
+        </p>
+        <p>
+          {day}.{month < 10 ? '0' + month: month}.{year}
         </p>
       </div>
     );

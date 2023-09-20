@@ -28,7 +28,7 @@ const Weather = () => {
         <div>
         {weatherData.main && (
           <div>
-            <h1>{weatherData.name}</h1>
+            <h1>Weather {weatherData.name}</h1>
             <p>Temp : {weatherData.main.temp}°C</p>
             <p>Вологість: {weatherData.main.humidity}%</p>
             <p>Стан погоди: {weatherData.weather[0].description}</p>
