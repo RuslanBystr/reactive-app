@@ -1,0 +1,12 @@
+
+.block{
+    display: block;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    background: #333344;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+}

@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Block from './component/block/Block';
+import Weather from './component/weather/Weather';
+import Time from './component/time/Time';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='content'>
+        <Block child={<Weather />}/>
+        <Block child={<Time />}/>
+        <Block />
+
+      </div>
     </div>
   );
 }
