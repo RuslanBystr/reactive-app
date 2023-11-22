@@ -1,12 +1,11 @@
 
 .block{
     display: block;
-    height: 200px;
-    width: 400px;
-    border-radius: 10px;
-    background: #333344;
+    border-radius: 5px;
+    border: 1px solid #338899;
     margin: 5px;
+    flex: 1;
     padding: 10px;
     box-sizing: border-box;
-    color: #fff;
+    color: #338899;
 }

@@ -29,7 +29,7 @@ const Weather = () => {
         {weatherData.main && (
           <div>
             <h1>Weather {weatherData.name}</h1>
-            <p>Temp : {weatherData.main.temp}°C</p>
+            <p>Temp : {Math.round(weatherData.main.temp-273.15)}°C</p>
             <p>Вологість: {weatherData.main.humidity}%</p>
             <p>Стан погоди: {weatherData.weather[0].description}</p>
           </div>

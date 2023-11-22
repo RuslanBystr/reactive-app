@@ -22,7 +22,7 @@ const Time = () => {
   
     return (
       <div>
-        <h1>Now time:</h1>
+        <h1>Now time</h1>
         <p> 
           {hours}:{minutes < 10 ? '0' : ''}{minutes}:{seconds < 10 ? '0' : ''}{seconds}
         </p>

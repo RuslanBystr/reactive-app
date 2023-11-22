@@ -11,7 +11,7 @@ const Currency = () => {
         const fetchCurrencyData = async () => {
             try {
                 const response = await axios.get(
-                    `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${currency}`
+                    `https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`
                 );
                 setCurrency(response.data);
             } catch (error) {
@@ -26,7 +26,8 @@ const Currency = () => {
 
     return (
         <div>
-            {currency.conversion_rates['USD']}
+            <h1>Currency</h1>
+            <p>USD: {currency.conversion_rates && currency.conversion_rates.UAH}</p>
         </div>
     );
 }

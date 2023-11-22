@@ -1,0 +1,11 @@
+div>button {
+    background-color: transparent;
+    border: 1px solid #338899;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #338899;
+}
+div>button:hover{
+    background-color: #338899;
+    color: #000;
+}

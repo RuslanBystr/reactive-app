@@ -1,9 +1,13 @@
 
 body{
-  background-color: #444455;
+  background-color: #000011;
 }
 
 .content{
   display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
   justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid #338899;
 }
